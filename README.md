@@ -14,13 +14,10 @@ inspired from here :
         <td>  $dbname = "?";</td>
       </tr>
     </table>
-   
- 
   
+<p>definitions </p> 
 
-<p>
- definitions </p> 
- <p>
+   <code>
 CREATE TABLE `accounts` (
   `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
@@ -28,15 +25,16 @@ CREATE TABLE `accounts` (
   `assigned` varchar(25) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
-</p>
-<p>
+      </code>
+
+   <code>
 CREATE TABLE `key` (
   `enc` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin2;
-</p>
-<p>
+   </code>
+   <code>
 INSERT INTO accounts
 ( username, password, assigned)
 VALUES( 'user', (select AES_ENCRYPT('pass', (select enc from `key` ))) , 'admin'); 
 
-</p>
+   </code>

@@ -1,1 +1,0 @@
-<h2> Digital Life <br> Working Smarter, Not Harder</h2>

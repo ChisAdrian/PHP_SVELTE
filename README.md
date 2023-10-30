@@ -1,5 +1,5 @@
 <p>Using https://laragon.org/index.html with Svelte ,PHP with live reload.</p>
-inspired from here : 
+Inspired from here : 
 <href>
   https://dev.to/anthonygushu/how-to-embed-a-svelte-app-within-a-php-application-with-live-reload-1knh
 </href>
